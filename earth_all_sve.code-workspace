@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "base_sve",
+			"path": "../base_sve"
+		},
+		{
+			"name": "demo_sve",
+			"path": "../demo_sve"
+		},
+		{
+			"name": "earth_adm_sve",
+			"path": "."
+		},
+		{
+			"name": "earth_sve",
+			"path": "../earth_sve"
+		}
+	],
+	"settings": {}
+}

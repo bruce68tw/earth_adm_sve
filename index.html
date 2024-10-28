@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark2">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 這裡無法載入 base_sve 的 css, icomoon因為使用 fonts, 所以放這裡, 後面的日期可控制版本 -->
+    <link rel="stylesheet" href="/bootstrap-5.3.0.min.css" />
+    <link rel="stylesheet" href="/_style.css?d=0725" />
+    <link rel="stylesheet" href="/icomoon.css?d=0725" />
+    <script src="/bootstrap-5.3.0.min.js"></script>
+    <script src="/popper-2.11.8.min.js"></script>
+
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  </head>
+  <body>
+    <!-- add height 100% !! -->
+    <div id="app" style="height:100%"/>
+    <script type="module">
+      import App from "@/App.svelte";
+      export default new App({ target: document.getElementById("app") });
+    </script>
+  </body>
+</html>

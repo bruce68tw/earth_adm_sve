@@ -1,0 +1,58 @@
+<!--
+<div id="divMain" style="height:100%"/>
+-->
+{#if $LoginSt}
+  <Main/>
+{:else}
+  <Login/>
+{/if}
+
+<XgTool bind:this={xgTool} />
+
+<script lang='ts'>
+    //在這裡載入變動的 css 才可使用 @base
+    import '@base/base.css';
+    import '@base/datatables-1.11.5-bruce.css';
+
+    import { onMount } from 'svelte';
+    import { LoginSt } from '@/store/LoginSt';
+    import Main from '@/view/_Main.svelte';
+    import Login from '@/view/_Login.svelte';
+    import XgTool from '@base/lib/XgTool.svelte';
+    import _Tool from '@base/ts/_Tool';
+    import _Fun from "@base/ts/_Fun";
+    import _Str from '@base/ts/_Str';
+    import _Xp from './ts/_Xp';
+
+  let xgTool:XgTool;
+
+  //因為要確保先執行 initA, 所以使用動態載入UI
+  onMount(async()=> {
+    //先執行初始化
+    let json = await _Fun.initA(3);
+    _Xp.txUrl = json.txUrl;
+    _Xp.md5Url = json.md5Url;
+    _Xp.hasEther = _Str.notEmpty(_Xp.txUrl);
+    _Tool.init(xgTool);
+
+    //再訂閱 LoginSt, 載入時會執行回調內容 !!
+    //LoginSt.subscribe(async(value)=> await loadForm());
+  });
+
+  /*
+  //動態載入form
+  //let form = null;
+  async function loadForm():Promise<void>{
+    _Tool.showWait();
+
+    let Main = $LoginSt
+        ? (await import('@/view/_Main.svelte')).default
+        : (await import('@/view/_Login.svelte')).default;
+
+    // 如果已經有元件實例，則先銷毀
+    if (form) form.$destroy();
+    form = new Main({ target: document.getElementById('divMain') });
+    _Tool.hideWait();
+  }
+  */
+</script>

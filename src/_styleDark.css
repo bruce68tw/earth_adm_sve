@@ -1,0 +1,132 @@
+﻿/* color & font size only */
+
+/* ==== html, body ==== */
+html, body {
+    font-size: 16px !important; /* global */
+    font-family: 微軟正黑體,Arial,Roboto,Helvetica Neue,Helvetica,sans-serif;
+    background: #232B3F;
+}
+body, label {
+    /* color: #9797AB !important;*/
+}
+.form-control, .form-select {
+    /*background: #1A202E;*/
+}
+
+/* ==== top bar ==== */
+.xg0-top {
+    color: #FFFFFF;
+    background: #1A202E;
+    border-bottom: 2px solid #363B47;
+}
+
+/* ==== left menu ==== */
+.xg-leftmenu {
+    background: #1A202E;
+    border-right: 2px solid #363B47;
+}
+
+/* li(item),a(文字),i(icon) */
+.xg-leftmenu li {
+    /*
+    color: #fff;
+    border-bottom: solid 2px #E5E5E5;
+    */
+}
+
+.xg-leftmenu a {
+    color: #9797AB !important;
+}
+
+.xg-leftmenu a:hover {
+    color: #FFFFFF !important;
+    background: #141924;
+}
+
+.xg-leftmenu a:hover i {
+    color: #EDD8E7;
+    background: #333237;
+}
+
+.xg-leftmenu i {
+    color: #fff;
+}
+
+/* 子功能表 */
+.xg-leftmenu-sub {
+    background: #141924;
+}
+
+.xg-leftmenu-sub a {
+    color: #fff;
+}
+
+/* ==== right area ==== */
+.xg0-right {
+    background: #232B3F;
+}
+
+/* ==== dataTable ==== */
+/*
+.xg-table {
+    border-color: lightgray !important;
+}
+
+.xg-table th, .xg-table td {
+    border-color: lightgray !important;
+}
+*/
+
+.xg-table th {
+    background: #1A202E;
+}
+
+.xg-table tr:hover {
+    background: #333237;
+}
+
+/* ==== modal ==== */
+.xg-modal .modal-header {
+    border-bottom: none;
+    background: #313131;
+}
+.xg-modal .modal-body, .xg-modal .modal-footer {
+    background: #404040;
+}
+
+/* row list toolbar */
+.xg-list-tbar {
+    padding: 3px 0 3px 0;
+}
+
+
+/* === checkbox & radio === */
+/* checkbox, span is square/round checked sign */
+.xi-check > span {	
+    border: 2px solid #C1C1C1;
+	/*background: white;*/
+}
+
+/* checked background */
+.xi-check > input:checked + span {
+    border: 2px solid #1266F1;
+	background: #1266F1;
+}
+
+/* checked sign */
+.xi-check > input:checked + span:after {
+    border: 2px solid #C1C1C1;
+	/*background: #1266F1;*/
+}
+
+/* radio checked sign 填滿 */
+.xi-check > input:checked + .xi-rspan:after {
+    background: #C1C1C1;
+}   
+
+/* disabled */
+.xi-check > input:disabled + span {
+    /*color: #b8b8b8;*/
+    border: 2px solid #787878;
+    background: gray;
+}

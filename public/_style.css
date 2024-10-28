@@ -1,0 +1,175 @@
+﻿/* color & font size only */
+
+/* ==== html, body ==== */
+html, body {
+    font-size: 16px !important; /* global */
+    font-family: 微軟正黑體,Arial,Roboto,Helvetica Neue,Helvetica,sans-serif;
+    /*background: #232B3F;*/
+}
+body, label {
+    /* color: #9797AB !important;*/
+}
+.form-control, .form-select {
+    /*background: #1A202E;*/
+}
+
+/* ==== 主畫面 top bar ==== */
+.xg0-top {
+    /*color: #EAFFFF;
+    background: #28C2FE;
+    border-bottom: 1px solid #CCC;*/
+    padding: 2px 15px;
+    background: #E0E0E0;
+    border-bottom: 1px solid #A6A7B8;
+}
+.xg0-top li {
+    margin: auto 5px;
+}
+
+/* icon */
+.xg0-top i {
+    font-size: 20px;
+}
+
+.xg0-right {
+  /*display: inline-block;
+  width: 100%;
+  min-height: 600px;*/
+  padding: 15px;
+  transition: 1.5s;
+}
+
+/* system name */
+.xg0-top .navbar-brand {
+    /*color: #F8FFFF; */   
+}
+/* 右邊用戶名稱 */
+.xg0-top .x-user {
+    /*color: #FAFAFA;*/
+}
+/* 右邊 icon */
+.xg0-top .nav-link {
+    color: #A6A7B8;
+}
+.xg0-top .nav-link:hover {
+    color: #222222;
+}   
+
+/* ==== left menu ==== */
+.xg-leftmenu {
+    background: #E0E0E0;
+    border-right: 1px solid #C1C1C1;
+}
+
+/* li(item),a(文字),i(icon) */
+.xg-leftmenu li {
+    /*
+    color: #fff;
+    border-bottom: solid 1px #E5E5E5;
+    */
+}
+
+.xg-leftmenu a, .xg-leftmenu i {
+    color: #222222 !important;
+}
+
+.xg-leftmenu a:hover, .xg-leftmenu a:hover i {
+    color: #222222 !important;
+    background: #CFCFCF;
+}
+/*
+.xg-leftmenu a:hover i {
+    color: #222222;
+    background: #EEEEEE;
+}
+*/
+
+/* 子功能表 */
+.xg-leftmenu-sub {
+    background: #FAFAFA;
+}
+
+.xg-leftmenu-sub a {
+    color: #222222;
+}
+
+.xg-leftmenu-sub a:hover {
+    background: #EEEEEE !important;
+}
+
+/* ==== 主畫面 right area ==== */
+.xg0-right {
+    padding: 15px;
+    transition: 1.5s;
+    /*background: #232B3F;*/
+}
+
+/* ==== dataTable ==== */
+/*
+.xg-table {
+    border-color: lightgray !important;
+}
+
+.xg-table th, .xg-table td {
+    border-color: lightgray !important;
+}
+*/
+
+.xg-table th {
+    background: #E0E0E0;
+}
+
+.xg-table tr:hover {
+    background: #FAFAFA;
+}
+
+/* ==== modal ==== */
+.xg-modal .modal-header {
+    border-bottom: none;
+    background: #FAFAFA;
+}
+.xg-modal .modal-body, .xg-modal .modal-footer {
+    /*background: #404040;*/
+}
+
+/* row list toolbar */
+.xg-list-tbar {
+    padding: 3px 0 3px 0;
+}
+
+/* === checkbox/radio === */
+/* checkbox, span is square/round checked sign */
+.xi-check > span {	
+    border: 2px solid #BFBFBF;
+	/*background: white;*/
+}
+
+/* checked background */
+.xi-check > input:checked + span {
+    border: 2px solid #0D6EFD;
+	background: #0D6EFD;
+}
+
+/* checked sign */
+.xi-check > input:checked + span:after {
+    border: 2px solid #F1F6FF;
+	/*background: #1266F1;*/
+}
+
+/* radio checked sign 填滿 */
+.xi-check > input:checked + .xi-rspan:after {
+    background: #F1F6FF;
+}   
+
+/* disabled */
+.xi-check > input:disabled + span {
+    /*color: #b8b8b8;*/
+    border: 2px solid #86B7FE;
+    background: #86B7FE;
+}
+
+.xg-wait {
+    font-size: 24px;    
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景色 */
+}
